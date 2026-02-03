@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Instagram</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instagram — Login</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="instagram-wrapper">
-        <div class="instagram-phone">
-            <img src="./img/instagram-celular.png" alt="celular">
+  <main class="container">
+    <section class="phone-preview" aria-hidden="true">
+      <img src="./img/instagram-celular.png" alt="phone preview" />
+    </section>
+
+    <section class="auth-panel" aria-labelledby="auth-heading">
+      <header class="panel-top">
+        <img src="./img/instagram-logo.png" alt="Instagram" class="logo" />
+        <div class="controls">
+          <label class="switch">
+            <input id="darkToggle" type="checkbox" />
+            <span class="slider" aria-hidden="true"></span>
+            <span class="visually-hidden">Toggle dark mode</span>
+          </label>
+
+          <select id="langSelect" aria-label="Select language">
+            <option value="en-US">EN - English</option>
+            <option value="pt-BR">PT - Português (BR)</option>
+            <option value="es-ES">ES - Español</option>
+          </select>
         </div>
-        <div class="instagram-continue">
-            <div class="group">
-                <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
-                <div class="profile-photo">
-                    <img src="./img/perfil-instagram.png" alt="foto de perfil">
-                </div>
-                <a href="#" class="instagram-login">Continue as njtsb1</a>
-                <a href="#" class="instagram-logout">Remove account</a>
-            </div>
-            <div class="group">
-                <p class="not-account">Is not njtsb1?</p>
-                <p class="not-account">
-                    <a href="#" class="instagram-logout">Switch accounts</a>
-                    ou
-                    <a href="#" class="instagram-logout">Sign up</a>
-                </p>
-            </div>
-            <div class="get-the-app">
-                <a href="#" class="instagram-logout">Get the app</a>
-                <div class="download">
-                    <a href="#" class="app-download"></a>
-                    <a href="#" class="app-download"></a>
-                </div>
-            </div>
+      </header>
+
+      <div class="card login-card" role="region" aria-labelledby="auth-heading">
+        <h1 id="auth-heading" class="visually-hidden">Instagram login</h1>
+
+        <div class="profile-row">
+          <div class="profile-photo">
+            <img src="./img/perfil-instagram.png" alt="profile" />
+          </div>
+          <div class="profile-actions">
+            <a href="#" class="btn primary" data-i18n="continueAs">Continue as user</a>
+            <a href="#" class="link" data-i18n="removeAccount">Remove account</a>
+          </div>
         </div>
-    </div>
+
+        <form class="login-form" id="loginForm" novalidate>
+          <label for="username" class="label" data-i18n="usernameLabel">Phone, username or email</label>
+          <input id="username" name="username" type="text" autocomplete="username" required />
+
+          <label for="password" class="label" data-i18n="passwordLabel">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required />
+
+          <button type="submit" class="btn primary" data-i18n="logIn">Log In</button>
+
+          <div class="divider"><span data-i18n="or">OR</span></div>
+
+          <a href="#" class="btn facebook" data-i18n="logInFacebook">Log in with Facebook</a>
+
+          <a href="#" class="link forgot" data-i18n="forgotPassword">Forgot password?</a>
+        </form>
+      </div>
+
+      <div class="card signup-card">
+        <p>
+          <span data-i18n="noAccount">Don't have an account?</span>
+          <a href="#" class="link" data-i18n="signUp">Sign up</a>
+        </p>
+      </div>
+
+      <div class="get-app">
+        <p data-i18n="getApp">Get the app.</p>
+        <div class="store-buttons">
+          <a href="#" class="store" aria-label="Download on the App Store">
+            <img src="./img/apple-button.png" alt="App Store" />
+          </a>
+          <a href="#" class="store" aria-label="Get it on Google Play">
+            <img src="./img/googleplay-button.png" alt="Google Play" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
