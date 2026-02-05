@@ -2,12 +2,12 @@ const translations = {
   "en-US": {
     continueAs: "Continue as user",
     removeAccount: "Remove account",
-    usernameLabel: "Phone, username or email",
+    usernameLabel: "*****, username or email",
     passwordLabel: "Password",
     logIn: "Log In",
     or: "OR",
     logInFacebook: "Log in with Facebook",
-    forgotPassword: "Forgot password?",
+    forgotPassword: "****** password?",
     noAccount: "Don't have an account?",
     signUp: "Sign up",
     getApp: "Get the app."
@@ -15,12 +15,12 @@ const translations = {
   "pt-BR": {
     continueAs: "Continuar como usuário",
     removeAccount: "Remover conta",
-    usernameLabel: "Telefone, nome de usuário ou e‑mail",
+    usernameLabel: "********, nome de usuário ou e‑mail",
     passwordLabel: "Senha",
     logIn: "Entrar",
     or: "OU",
     logInFacebook: "Entrar com o Facebook",
-    forgotPassword: "Esqueceu a senha?",
+    forgotPassword: "******** a senha?",
     noAccount: "Não tem uma conta?",
     signUp: "Cadastre-se",
     getApp: "Baixe o aplicativo."
@@ -28,12 +28,12 @@ const translations = {
   "es-ES": {
     continueAs: "Continuar como usuario",
     removeAccount: "Eliminar cuenta",
-    usernameLabel: "Teléfono, nombre de usuario o correo",
+    usernameLabel: "********, nombre de usuario o correo",
     passwordLabel: "Contraseña",
     logIn: "Iniciar sesión",
     or: "O",
     logInFacebook: "Iniciar con Facebook",
-    forgotPassword: "¿Olvidaste la contraseña?",
+    forgotPassword: "********** la contraseña?",
     noAccount: "¿No tienes una cuenta?",
     signUp: "Regístrate",
     getApp: "Descarga la app."
@@ -118,3 +118,4 @@ if (document.readyState === "loading") {
 } else {
   init();
 }
+
