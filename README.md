@@ -5,10 +5,57 @@ Daily Learning...
 Project developed at Digital Innovation One's Bootcamp HTML Web Developer with guidance from specialist [Gabriela Pinheiro](http://www.github.com/SpruceGabriela "Gabriela Pinheiro").
 Learning how to rebuild Instagram login page, using CSS with Flexbox, one of the most used element placement approaches when it comes to responsiveness.
 
+## InstaDemo - Login Page (Educational Front-end)
+
+Educational front-end project that reconstructs the Instagram login page using HTML5, CSS3 (Flexbox), and JavaScript.
+Focus on semantics, accessibility, and responsiveness.
+No backend - only static files to run locally.
+
+## Key Features
+
+- Responsive layout with Flexbox; adapts for desktop, tablet, and smartphone.
+- Dark/light mode with icons (moon/sun); default theme: dark.
+- Multilingual: EN-US (default), PT-BR, ES.
+- Accessibility: labels, `aria-*`, visible focus, and `aria-live` for notifications.
+- No backend: simple validation on the front-end and toasts simulating responses.
+- Lightweight design: no external dependencies; easy to customize.
+
+## How to use (local)
+
+1. Open index.html in your browser (double-click or `File → Open` in browser).
+2. Test:
+- Change language in the selector.
+- Switch theme with the moon/sun button.
+- Fill out the form and submit to see the toast.
+
+## Quick customization
+
+- Colors: edit the CSS variables in `:root` and `body.theme-light`.
+- Text/languages: add or edit keys in `translations` within script.js.
+- Images: replace mock elements with `<img>` if you want to use real assets.
+- Validation: implement inline validation in `script.js` for detailed messages.
+
+## Suggested best practices and extensions
+
+- Add accessibility tests (axe, Lighthouse).
+- Implement inline error messages with `aria-describedby`.
+- Transform into a reusable component (React/Vue) for integration into larger projects. 
+
+## Technologies used
+
+- **HTML5**: semantic markup and login form.
+- **CSS3**: styles with Flexbox, dark/light theme, and responsiveness.
+- **JavaScript**: theme switching, multilingual support, and form behavior.
+- **AI** (Artificial Intelligence)
+
 Dark Mode
-<img width="682" height="508" alt="Dark_mode" src="https://github.com/user-attachments/assets/216221d5-2cbb-458a-bf01-6ba66d58eb0f" />
+
+![Screenshot](./img/Dark_mode.png)
 
 Light Mode
-<img width="617" height="478" alt="light_mode" src="https://github.com/user-attachments/assets/58649b42-d914-49f0-b6e1-c82bc52dbdbf" />
+
+![Screenshot](./img/light_mode.png)
 
 [LICENSE](./LICENSE)
+
+See [original repository](https://github.com/SpruceGabriela/instagram-dio).
