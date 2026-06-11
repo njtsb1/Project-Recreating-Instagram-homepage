@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark" data-lang="en">
+  <main class="container" id="main" role="main">
+    <section class="hero" aria-hidden="true">
+      <div class="phone-mock">
+        <div class="phone-screen">
+          <div class="mock-header">Feed preview</div>
+          <div class="mock-grid" aria-hidden="true">
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div>
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth" aria-labelledby="auth-title">
+      <header class="auth-header">
+        <h1 id="auth-title" class="brand">InstaDemo</h1>
+        <div class="controls">
+          <label for="lang" class="visually-hidden">Language</label>
+          <select id="lang" class="lang-select" aria-label="Select language">
+            <option value="en">EN - English</option>
+            <option value="pt-br">PT-BR - Português</option>
+            <option value="es">ES - Español</option>
+          </select>
+
+          <button id="themeToggle" class="theme-toggle" aria-pressed="true" aria-label="Toggle theme">
+            <!-- moon icon -->
+            <svg id="iconMoon" class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+            </svg>
+            <!-- sun icon -->
+            <svg id="iconSun" class="icon hidden" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M6.76 4.84l-1.8-1.79L3.17 5.84l1.79 1.79 1.8-1.79zM1 13h3v-2H1v2zm10 8h2v-3h-2v3zm7.03-3.03l1.79 1.79 1.79-1.79-1.79-1.79-1.79 1.79zM17 13h3v-2h-3v2zM12 7a5 5 0 100 10 5 5 0 000-10zM6.76 19.16l-1.79 1.79 1.79 1.79 1.79-1.79-1.79-1.79zM3.17 18.16l1.79-1.79L3.17 14.58 1.38 16.37l1.79 1.79z"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="card" role="form" aria-labelledby="card-title">
+        <h2 id="card-title" class="card-title">Log in</h2>
+
+        <form id="loginForm" novalidate>
+          <label for="user" class="label" id="label-user">Phone, username or email</label>
+          <input id="user" name="user" type="text" autocomplete="username" required aria-required="true" />
+
+          <label for="pass" class="label" id="label-pass">Password</label>
+          <input id="pass" name="password" type="password" autocomplete="current-password" required aria-required="true" />
+
+          <button type="submit" class="btn primary" id="loginBtn">Log in</button>
+
+          <div class="divider" aria-hidden="true"><span>OR</span></div>
+
+          <button type="button" class="btn fb" id="fbBtn" aria-label="Log in with Facebook">Log in with Facebook</button>
+
+          <a href="#" class="forgot" id="forgotLink">Forgot password?</a>
+        </form>
+      </div>
+
+      <div class="card small">
+        <p id="signupText">Don't have an account? <a href="#" id="signupLink">Sign up</a></p>
+      </div>
+
+      <footer class="download">
+        <p id="getApp">Get the app.</p>
+        <div class="stores" aria-hidden="true">
+          <button class="store-btn">App Store</button>
+          <button class="store-btn">Google Play</button>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
