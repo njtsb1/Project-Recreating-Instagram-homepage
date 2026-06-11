@@ -1,5 +1,3 @@
-Daily Learning...
-
 # Recreating the Instagram Homepage
 
 Project developed at Digital Innovation One's Bootcamp HTML Web Developer with guidance from specialist [Gabriela Pinheiro](http://www.github.com/SpruceGabriela "Gabriela Pinheiro").
