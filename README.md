@@ -24,6 +24,7 @@ No backend - only static files to run locally.
 
 1. Open index.html in your browser (double-click or `File → Open` in browser).
 2. Test:
+
 - Change language in the selector.
 - Switch theme with the moon/sun button.
 - Fill out the form and submit to see the toast.
@@ -39,7 +40,7 @@ No backend - only static files to run locally.
 
 - Add accessibility tests (axe, Lighthouse).
 - Implement inline error messages with `aria-describedby`.
-- Transform into a reusable component (React/Vue) for integration into larger projects. 
+- Transform into a reusable component (React/Vue) for integration into larger projects.
 
 ## Technologies used
 
